@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="567.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MasterController">
+   <children>
+      <TableView fx:id="premiumsuiteTableView" layoutX="209.0" layoutY="38.0" prefHeight="195.0" prefWidth="565.0">
+         <columns>
+            <TableColumn fx:id="SuiteName" prefWidth="96.0" text="Name" />
+            <TableColumn fx:id="SuiteLocation" prefWidth="74.0" text="Location" />
+            <TableColumn fx:id="roomNumbers" prefWidth="115.0" text="Number of rooms" />
+            <TableColumn fx:id="price" text="Price" />
+            <TableColumn fx:id="status" prefWidth="87.0" text="Status" />
+            <TableColumn fx:id="Maintain" prefWidth="108.0" text="Maintainance" />
+         </columns>
+      </TableView>
+      <TextField fx:id="InsertSuite" layoutX="21.0" layoutY="111.0" prefHeight="25.0" prefWidth="167.0" promptText="Name of Apartment to Rent" />
+      <TextArea fx:id="TextArea2" layoutX="180.0" layoutY="295.0" prefHeight="150.0" prefWidth="367.0" />
+      <Button fx:id="Upload" layoutX="21.0" layoutY="345.0" mnemonicParsing="false" onAction="#importdata" prefHeight="25.0" prefWidth="118.0" text="Import File" />
+      <Button fx:id="Download" layoutX="21.0" layoutY="395.0" mnemonicParsing="false" onAction="#DownLoadSuite" prefHeight="25.0" prefWidth="118.0" text="Export to file" />
+      <Button fx:id="addsuite" layoutX="21.0" layoutY="457.0" mnemonicParsing="false" onAction="#addSuite" prefHeight="25.0" prefWidth="104.0" text="Rent" />
+      <ImageView fx:id="Imageview2" fitHeight="187.0" fitWidth="249.0" layoutX="556.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="LoadData" layoutX="21.0" layoutY="258.0" mnemonicParsing="false" onAction="#LoadSuite" prefHeight="25.0" prefWidth="104.0" text="Load Data" />
+      <Button layoutX="209.0" layoutY="457.0" mnemonicParsing="false" onAction="#Quit" prefHeight="25.0" prefWidth="104.0" text="Exit" />
+      <Label layoutX="180.0" layoutY="258.0" prefHeight="25.0" prefWidth="104.0" text="Description" />
+      <Label layoutX="556.0" layoutY="267.0" prefHeight="25.0" prefWidth="104.0" text="Image Preview" />
+      <Label layoutX="18.0" layoutY="225.0" prefHeight="25.0" prefWidth="159.0" text="Load to view available Suites" wrapText="true" />
+      <MenuBar layoutX="-1.0" layoutY="1.0" prefHeight="25.0" prefWidth="799.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

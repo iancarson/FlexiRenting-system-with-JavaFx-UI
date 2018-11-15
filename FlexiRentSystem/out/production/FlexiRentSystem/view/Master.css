@@ -1,0 +1,57 @@
+.root {
+    -fx-background-color: lightblue;
+}
+/*selected row*/
+.table-view:focused .table-row-cell:filled:focused:selected{
+    -fx-background-color:brown;
+    -fx-background-insets:0,1,2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+/*Selected row when table not focused*/
+.table-row-cell:filled:focused:selected{
+    -fx-background-color: red;
+    -fx-background-insects:0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+
+}
+/*Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover
+{
+    -fx-background-color:green;
+    -fx-background-insects:0,0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+/* selected row hover */
+.table-view:row-selection .table-row-cell:filled:focused:hover{
+    -fx-background-color: blue;
+    -fx-background-insets: 0,0 0 1 0,1 1 2 1,2 2 3 2,3 3 4 3;
+}
+.table-row-cell
+{
+    -fx-font-family:Rockwell;
+    -fx-border-color: lightblue;
+    -fx-font-size:13px;
+    -fx-text-fill: lightblue;
+}
+/* color for odd Table row cell */
+.table-row-cell:odd
+{
+    -fx-background-color:lightgreen;
+    -fx-background-insets:0,0 0 1 0;
+    -fx-padding:0.0em;
+}
+.table-row-cell:even
+{
+    -fx-background-color:lightgreen;
+    -fx-background-insets:0,0 0 1 0;
+    -fx-padding:0.0em;
+}
+.BarChart{
+    -fx-legend-visible: true;
+    -fx-background-color: black;
+}
+.MenuBar{
+    -fx-background-color: lightgreen;
+}
